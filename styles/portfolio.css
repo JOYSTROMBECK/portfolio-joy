@@ -1,3 +1,4 @@
+
 :root {
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
@@ -5,46 +6,42 @@
   --default-font-family: "Poppins", sans-serif;
 }
 
-body {
-  font-family: var(--default-font-family);
+
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+body {
+  font-family: var(--default-font-family);
   color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 2.5rem;
   line-height: 1.5;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 1.5rem;
 }
 
-p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-}
 
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 2rem 1rem;
 }
 
-.hero p {
-  font-size: 36px;
+.hero h1 {
+  font-size: 3rem;
   font-weight: bold;
-  margin: 0;
   color: #272142;
 }
 
@@ -52,164 +49,109 @@ p {
   font-family: var(--heading-font-family);
   font-weight: normal;
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 1rem;
 }
 
+
 .about-section {
-  padding: 160px 20px;
+  padding: 2rem 1rem;
 }
 
 .about-section h1 {
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .about-section h2 {
-  font-size: 18px;
+  font-size: 0.875rem;
   font-family: var(--default-font-family);
 }
 
-.about-section-content {
-  margin: 30px;
+.about-section p {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.btn {
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 2rem;
 }
 
 .btn-branding {
   background: var(--branding-color);
-  border-radius: 4px;
   color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
 }
 
 .btn-branding-outline {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
 }
 
-.project-desciption {
-  padding: 120px 60px;
+
+.my-work {
+  padding: 2rem 1rem;
 }
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 44px;
-    line-height: 56px;
-  }
-
-  h2 {
-    font-size: 44px;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-
-  .about-section {
-    text-align: center;
-    padding: 0;
-  }
-
-  .project-desciption {
-    padding: 0;
-    text-align: center;
-  }
-}
-nav {
-  padding: 20px 0;
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-nav ul {
-  padding: 0;
-  margin: 0;
+.project img {
+  max-width: 100%;
+  height: auto;
 }
 
-nav li {
-  display: inline;
-  list-style: none;
-  line-height: 42px;
-  margin-left: 15px;
+.project-description {
+  margin-left: 1rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: #272142;
-  transition: all 100ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-  color: var(--branding-color);
-}
 
 footer {
-  margin: 60px 0;
+  margin: 2rem 0;
+  text-align: center;
 }
 
-footer .contact-box {
+.contact-box {
   background: var(--secondary-color);
-  padding: 30px 120px;
+  padding: 1.5rem 4rem;
   border-radius: 10px;
 }
 
-footer .contact-box p {
-  margin: 0;
+.contact-box h4 {
+  font-size: 1.25rem;
 }
 
-footer .email-link {
+.email-link {
   text-decoration: none;
   color: black;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
-footer .email-link:hover {
+.email-link:hover {
   color: var(--branding-color);
 }
 
-footer .social-links a {
-  margin: 0 20px;
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin: 0 1rem;
   color: var(--branding-color);
   background: var(--secondary-color);
-  padding: 10px 14px;
+  padding: 0.5rem 0.7rem;
   border-radius: 50%;
-  font-size: 18px;
-  transition: all 100ms ease-in-out;
+  font-size: 1.125rem;
 }
 
-footer .social-links a:hover {
+.social-links a:hover {
   color: white;
   background: var(--branding-color);
 }
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 44px;
-    line-height: 1.5;
-  }
-
-  h2 {
-    font-size: 44px;
-  }
-
-  h4 {
-    font-size: 26px;
-  }
-
-  .hero {
-    padding: 80px 20px;
-  }
-
-  .content {
-    text-align: center;
-    padding: 0;
-  }
-
-  .project-desciption {
-    padding: 0;
-    text-align: center;
-  }
-}
